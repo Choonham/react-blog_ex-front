@@ -1,0 +1,49 @@
+@import "./palette.scss";
+
+.postViewer {
+  margin-top: 4rem;
+};
+
+.postHead {
+  border-bottom: 1px solid nth($gray, 2);
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+    margin: 0;
+  };
+};
+
+.subInfo {
+  .hasMarginTop {
+    margin-top: 1rem;
+  }
+  color: nth($gray, 6);
+
+  span + span:before {
+    color: nth($gray, 5);
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+    content: '\B7';
+  };
+};
+
+.tags {
+  margin-top: 0.5rem;
+  .tag {
+    display: inline-block;
+    color: nth($cyan, 7);
+    text-decoration: none;
+    margin-right: 0.5rem;
+
+    &:hover {
+      color: nth($cyan, 6);
+    };
+  };
+};
+
+.postContent {
+  font-size: 1.3125rem;
+  color: nth($gray, 8);
+};

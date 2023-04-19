@@ -1,0 +1,59 @@
+@import "./palette.scss";
+
+.tagBoxBlock {
+  width: 100%;
+  border-top: 1px solid nth($gray, 2);
+  padding-top: 2rem;
+
+  h4 {
+    color: nth($gray, 8);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+  }
+};
+
+.tagForm {
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  width: 256px;
+  border: 1px solid nth($gray, 9);
+  input, button {
+    outline: none;
+    border: none;
+    font-size: 1rem;
+  }
+
+  input {
+    padding: 0.5rem;
+    flex: 1;
+    min-width: 0;
+  }
+
+  botton {
+    cursor: pointer;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border: none;
+    background: nth($gray, 8);
+    color: white;
+    font-weight: bold;
+    &:hover {
+      background: nth($gray, 6);
+    }
+  }
+};
+
+.tag {
+  margin-right: 0.5rem;
+  color: nth($gray, 6);
+  cursor: pointer;
+  &:hover {
+    opacity: 0.5;
+  }
+};
+
+.tagListBlock {
+  display: flex;
+  margin-top: 0.5rem;
+}

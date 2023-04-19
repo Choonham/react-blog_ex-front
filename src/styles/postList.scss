@@ -1,0 +1,37 @@
+@import "./palette.scss";
+
+.postList {
+  margin-top: 3rem;
+};
+
+.writePostButtonWrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 3rem;
+};
+
+.postItem {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+
+  &:first-child {
+    padding-top: 0;
+  };
+
+  & + & {
+    border-top: 1px solid nth($gray, 2);
+  };
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 0;
+    margin-top: 0;
+    &:hover {
+      color: nth($gray, 6);
+    };
+  };
+
+  p {
+    margin-top: 2rem;
+  };
+};

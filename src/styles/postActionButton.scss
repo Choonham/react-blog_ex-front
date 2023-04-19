@@ -1,0 +1,26 @@
+@import "./palette.scss";
+
+.postActionButton {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+  margin-top: -1.5rem;
+};
+
+.actionButton {
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  color: nth($gray, 6);
+  font-weight: bold;
+  border: none;
+  outline: none;
+  font-size: 0.875rem;
+  cursor: pointer;
+  &:hover {
+  background: nth($gray, 1);
+  color: nth($cyan, 7);
+  }
+  & + & {
+    margin-left: 0.25rem;
+  }
+};
