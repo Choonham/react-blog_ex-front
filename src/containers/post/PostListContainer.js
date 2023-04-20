@@ -25,7 +25,7 @@ const PostListContainer = () => {
         <PostList
             loading={loading}
             error={error}
-            posts={posts}z
+            posts={posts}
             showWriteButton={user}
         />
     );

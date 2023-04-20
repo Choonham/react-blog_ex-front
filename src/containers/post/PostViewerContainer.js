@@ -31,7 +31,7 @@ const PostViewerContainer = () => {
     const onEdit = () => {
         dispatch(setOriginalPost(post));
         navigate('/write');
-    }
+    };
 
     const onRemove = async () => {
         try {
@@ -40,7 +40,7 @@ const PostViewerContainer = () => {
         } catch(e) {
             console.log(e);
         }
-    }
+    };
 
     const ownPost = (user && user.id) === (post && post.User.id);
 

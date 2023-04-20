@@ -1,7 +1,7 @@
 import {useNavigate} from "react-router";
 import '../../styles/button.scss';
 
-const Button = ({to, ...rest}) => {
+const Button = ({to, isFull, ...rest}) => {
     const navigate = useNavigate();
     const onClick = (e) => {
          if(to) {
@@ -11,7 +11,10 @@ const Button = ({to, ...rest}) => {
              rest.onClick(e);
          }
     };
-    return <button className="StyledButton fullWidth cyan" {...rest} onClick={onClick} />;
+
+    const className = isFull ? "StyledButton fullWidth cyan" : "StyledButton cyan";
+
+    return <button  {...rest} className={className} onClick={onClick} />;
 };
 
 export default Button;
